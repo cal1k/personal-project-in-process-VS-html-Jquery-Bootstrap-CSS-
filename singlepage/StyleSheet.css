@@ -1,0 +1,185 @@
+﻿body {
+    z-index: 1;
+    background-color: #01050c;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: polla;
+    src: url(fonts/polla.ttf);
+}
+@font-face {
+    font-family: segan-light;
+    src: url(fonts/Segan-Light.ttf);
+}
+@font-face {
+    font-family: cblock;
+    src: url(fonts/creativeblock-bb.bold.ttf);
+}
+
+h1{
+    font-family: polla;
+    font-size: 189%;
+}
+p{
+    font-family: segan-light;
+}
+.contact, #crazfont {
+    font-family: cblock;
+}
+.bubbles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translateZ(0);
+}
+
+.bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    background-color: #dcf4f7;
+    bottom: -100px;
+    animation: circle 20s infinite;
+    transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1){  /* stars, hearts, skulls, X's , bubbles 1-13 */
+    width: 30px;
+    height: 30px;
+    left: 20%;
+}
+.bubbles li:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 60%;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 11s;
+    animation-delay: 2s;
+    animation-duration: 11s;
+}
+.bubbles li:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    left: 48%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 5s;
+    animation-delay: 1s;
+    animation-duration: 5s;
+}
+.bubbles li:nth-child(4) {
+    width: 25px;
+    height: 25px;
+    left: 18%;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 8s;
+    animation-delay: 1s;
+    animation-duration: 8s;
+}
+.bubbles li:nth-child(5) {
+    width: 47px;
+    height: 47px;
+    left: 50%;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 17s;
+    animation-delay: 3s;
+    animation-duration: 17s;
+}
+.bubbles li:nth-child(6) {
+    width: 32px;
+    height: 32px;
+    left: 88%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 9s;
+    animation-delay: 1s;
+    animation-duration: 9s;
+}
+.bubbles li:nth-child(7) {
+    width: 52px;
+    height: 52px;
+    left: 27%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 15s;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+.bubbles li:nth-child(8) {
+    width: 22px;
+    height: 22px;
+    left: 80%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 6s;
+    animation-delay: 1s;
+    animation-duration: 6s;
+}
+.bubbles li:nth-child(9) {
+    width: 42px;
+    height: 42px;
+    left: 39%;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+.bubbles li:nth-child(10) {
+    width: 12px;
+    height: 12px;
+    left: 9%;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 4s;
+    animation-delay: 3s;
+    animation-duration: 4s;
+}
+.bubbles li:nth-child(11) {
+    width: 76px;
+    height: 76px;
+    left: 75%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 7s;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    }
+.bubbles li:nth-child(12) {
+    width: 18px;
+    height: 18px;
+    left: 5%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 3s;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.bubbles li:nth-child(13) {
+    width: 66px;
+    height: 66px;
+    left: 95%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 4s;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
+@keyframes circle {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    100% {
+    -webkit-transform: translateY(-1080px) rotate(640deg);
+    transform: translateY(-1080px) rotate(640deg);
+    }
+}
+
+.vid1b{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+.vid1bb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
